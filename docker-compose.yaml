@@ -1,11 +1,13 @@
 version: "3.8"
 services:
   backend:
+    image: adambunce/crud-backend
     build: ./backend
     container_name: backend_c
     ports:
       - '8080:8080'
   frontend:
+    image: adambunce/crud-frontend
     build: ./crud
     container_name: frontend_c
     ports:
